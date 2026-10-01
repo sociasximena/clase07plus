@@ -1,0 +1,246 @@
+
+:root{
+
+    /* --fondoheader: */
+/* --fondo header: */
+/* --fondo header: */
+
+--letrapagina: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+--fondoheader:#da627d;
+--colorheader:white;
+--fondotitulosuperior:#ffa5ab;
+--colortitulo:white;
+--fondotituloinferior:#a53860;
+--fondoseccion: #f9dbbd;
+--colorseccion: gray;
+--fondotituloseccion:#450920;
+--colortituloseccion:white;
+--fondotitulofooter:#da627d;
+--colorfooter:white;
+
+}
+
+
+/* reseteo universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defino el estilo del body */
+
+body{
+    font-family:var(--letrapagina);
+    background-image: url(../assets/fondo/round.png);
+}
+
+/* defino el estilo del encabezado */
+
+header{
+    background-color: var(--fondoheader);
+    color:var(--colorheader);
+    text-align: center;
+}
+
+/* defino las clases de los titulos dentro del header */
+
+.titulosuperior{
+    background-color:var(--fondotitulosuperior);
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.titulocentro{
+    color: var(--colortitulo);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 26px;
+    word-spacing: 8px;
+    letter-spacing: 5px;
+}
+
+.tituloinferior{
+    font-size: 20px;
+    background-color: var(--fondotituloinferior);
+    color: var(--colortitulo);
+    text-align: right;
+    padding: 10px;
+
+}
+
+.icons{
+    position: relative;
+    top: 5px;
+}
+
+
+/* estructura principal de la página */
+
+/* defino las secciones */
+
+section{
+    width: 80%;
+    background-color:var(--fondoseccion);
+    color:var(--colorseccion);
+    text-align: justify;
+    padding-bottom: 20px;
+    margin: 25px auto;
+}
+
+/* defino el titulo dentro de las secciones */
+
+section h2{
+    background-color:var(--fondoseccion);
+    color:var(--colorseccion);
+    padding: 10px 10px;
+    
+    
+}
+
+/* defino la lista no ordenada dentro de las secciones */
+
+section ul{
+    margin-left: 70px;
+}
+
+/* defino los parrafos dentro de las secciones */
+
+section p{
+    padding: 0 20px;
+    margin: 16px 0;
+}
+
+/* estilo de los articulos */
+
+article{
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* defino el estilo de las imágenes dentro de los articulos */
+
+article img{
+    width: 60%;
+    height: 50%;
+    box-shadow:  15px 15px 20px gray;
+}
+
+/* defino el estilo del pie de página */
+
+footer{
+    background-color: var(--fondotitulofooter);
+    color:var(--colorfooter);
+    text-align: center;
+}
+
+
+/* Definimos los estilos de Formulario */
+
+/* definimos la clase formulario que da formato a la seccion */
+
+.formulario{
+
+    width: 60%;
+	margin: 50px auto;
+	padding: 15px;
+
+}
+
+/* definimos el titulo dentro de la clase formulario */
+
+.formulario h2{
+	margin-bottom: 20px;
+    
+}
+
+/* definimos la etiqueta formulario */
+
+form{
+text-align:left;
+}
+
+/* definimos las etiquetas que forman parte del formulario */
+
+input, textarea, select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0px; 
+border: 1px solid #ccc;
+border-radius: 10px; 
+background-color: #fff;
+
+}
+
+/* definimos las clases de los botones del formulario */
+
+.guardar, .cancelar {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+.guardar{
+    background-color: #a53860;
+    color: white;
+}
+
+/* definimos la accion cuando se pasa el mouse sobre el boton guardar */
+
+.guardar:hover{
+    background-color: #a53860 ;
+}
+
+.cancelar {
+    background-color:  gray;
+    color: white;
+
+}
+
+/* definimos la accion cuando se pasa el mouse sobre el boton cancelar */
+
+.cancelar:hover{
+    background-color: #a53860;
+
+}
+
+/* enlace entre páginas dentro del header */
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* boton subir */
+
+.boton{
+	width: 70px;
+	height: 40px;
+	background-color:#a53860 ;
+	border-radius: 5px;
+
+	position: fixed;
+	bottom: 55px;
+	right: 15px;
+	text-align: center;
+
+     transition: all 1s;
+	
+}
+
+.boton:hover{
+	width: 90px;
+    background-color: #a53860;
+    
+}
+
+.boton p{
+	color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
